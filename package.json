@@ -1,0 +1,11 @@
+{
+  "name": "pigula",
+  "version": "1.0.0",
+  "description": "Aplikacja zdrowotna � opis Prosta aplikacja zdrowotna z intuicyjnym interfejsem do zarz�dzania wizytami i lekami online. Umo�liwia logowanie/rejestracj�, wyszukiwanie specjalist�w, rezerwacj� wizyt, przegl�d lek�w i pakiet�w, koszyk, forum oraz bezpieczne wylogowanie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ola",
+  "license": "ISC"
+}

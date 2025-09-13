@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:background="#001B34"
+>
+
+    <!-- Tytuł konwersacji -->
+    <TextView
+        android:id="@+id/titleConversation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:text="Rozmowa"
+        android:textColor="#FF007A"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Lista wiadomości -->
+    <ListView
+        android:id="@+id/listMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/inputContainer"
+        android:layout_below="@id/titleConversation"
+        android:layout_marginTop="20dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:padding="16dp"
+        android:background="#1B3754"
+></ListView>
+    <!-- Kontener dla wprowadzania wiadomości -->
+    <LinearLayout
+        android:id="@+id/inputContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#1B3754">
+
+        <!-- Pole tekstowe do wpisywania wiadomości -->
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:hint="Napisz wiadomość..."
+            android:textColor="#FFFFFF"
+            android:textColorHint="#CCCCCC"
+            android:padding="10dp"/>
+
+        <!-- Przycisk do wysyłania wiadomości -->
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#08DDCE"
+            android:text="Wyślij"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</RelativeLayout>
